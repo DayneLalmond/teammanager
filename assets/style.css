@@ -1,0 +1,69 @@
+html {
+    background: beige;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-decoration: underline;
+    margin: 1%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5em;
+    text-align: center;
+    animation: slide 1s;
+    animation-fill-mode: forwards;
+  }
+  /* Animation made for the initial impression of the webpage */
+  @keyframes slide {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+      padding-inline-end: 5em;
+      }
+    }
+
+div {
+    color: salmon;
+}
+
+h3 {
+    text-align: center;
+}
+
+/* */
+.myCard {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: inline-flex;
+    flex-direction: row;
+    text-align: justify;
+    width: 25%;
+    margin: 2%;
+    background-image: linear-gradient(to right, rgb(206, 251, 255), beige);
+    border-left: 10px solid royalblue;
+    box-shadow: 3px 4px bisque;
+}
+
+/* ================================================== */
+
+.tooltip {
+    position: relative;
+    cursor: pointer;
+    margin-left: 2em;
+  }
+  
+  .tooltip .tooltiptext {
+    position: absolute;
+    left: 1em;
+    bottom: -20px;
+    visibility: hidden;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    color: blue;
+  }
